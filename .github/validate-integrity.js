@@ -1,10 +1,7 @@
-const fetch = require("node-fetch");
+const fs = require("fs");
 
-async function getSchema(){
-    let response = await fetch("https://github.com/4GeeksAcademy/project-template/blob/main/.github/learn-schema.json");
-    let learnSchema = await response.json(); 
-    return learnSchema
-} 
-console.log(getSchema())
+fs.readFile("../workflows/validate-integrity.yml", (err, content) => {
+    console.log(content)
+})
 
 process.exit();
