@@ -11,5 +11,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install node-fetch
+      - run: npm install node-fetch -g
       - run: node ./.github/validate-integrity.js
