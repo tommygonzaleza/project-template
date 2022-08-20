@@ -6,7 +6,8 @@
 	"translations": ["us"],
 	"technologies": ["some-technology"],
 	"difficulty": "beginner",
-	"syntax": null,
+	"syntax": "javascript",
 	"duration" : 2,
-	"description" : "Describe your proyect with 250 chars max"
+	"description" : "Describe your proyect with 250 chars max",
+	"autoPlay": false
 }
