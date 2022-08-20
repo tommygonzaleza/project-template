@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs';
+const { readFile } = require('node:fs');
 
 readFile("../workflows/validate-integrity.yml", (err, content) => {
     if(err)console.log(err)
