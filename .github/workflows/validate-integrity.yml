@@ -13,3 +13,8 @@ jobs:
           node-version: '14.x'
       - run: npm install @learnpack/learnpack -g
       - run: learnpack audit
+      - run: |
+          git config --global user.name 'Tomas Gonzalez'
+          git config --global user.email 'gonzalez.tommy2001@gmail.com'
+          git commit -am "Automated report"
+          git push
